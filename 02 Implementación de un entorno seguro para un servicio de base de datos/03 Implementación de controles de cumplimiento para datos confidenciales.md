@@ -64,13 +64,14 @@ Notas adicionales:
 - Estas clasificaciones son metadata que facilitan discovery, reporting y la aplicación automatizada de controles.
 - Tras añadir o quitar clasificaciones, actualice procesos de auditoría y reporting para reflejar cambios.
 - Compruebe compatibilidad con herramientas de clasificación automatizada y con políticas de Azure Purview si las usa.
+  
+&nbsp;
 
+## Seguridad a nivel de fila (RLS) y Dynamic Data Masking (DDM)
 
-## Implementación: Seguridad a nivel de fila (RLS) y Dynamic Data Masking (DDM)
+**Seguridad a nivel de fila (Row-Level Security, RLS)**
 
-Seguridad a nivel de fila (Row-Level Security, RLS)
-
-Descripción: RLS restringe las filas que puede ver o modificar un usuario según una política aplicada en la base de datos.
+RLS restringe las filas que puede ver o modificar un usuario según una política aplicada en la base de datos.
 
 Ejemplo (Azure SQL Database / SQL Server) — crear función de predicado y política:
 
@@ -91,11 +92,13 @@ ADD BLOCK PREDICATE dbo.fn_predicate(TenantId) ON dbo.Orders AFTER INSERT;
 ALTER SECURITY POLICY dbo.SecurityPolicy WITH (STATE = ON);
 ```
 
-Notas:
+**Notas:**
 - En escenarios PaaS (Azure SQL Database) y IaaS (SQL Server en VM) la sintaxis y comportamiento son los mismos.
 - Use `SESSION_CONTEXT` o `CONTEXT_INFO()` para propagar el tenant/usuario desde la aplicación.
 
-Dynamic Data Masking (DDM)
+&nbsp;
+
+**Dynamic Data Masking (DDM)** 
 
 Descripción: DDM oculta o enmascara valores sensibles en las consultas resultantes, sin cambiar los datos subyacentes. Es una capa de protección para interfaces y usuarios que no necesitan ver los valores completos.
 
@@ -116,7 +119,7 @@ Ejemplos de funciones de máscara comunes:
 - `email()` — preserves parcialmente formato de email.
 - `partial(prefix, padding, suffix)` — máscara personalizada por trozos.
 
-Importante:
+**Importante:**
 - DDM no es un control criptográfico ni sustituto del cifrado; es una protección para reducir exposición accidental.
 - Combine DDM con políticas de acceso, RLS, y auditoría.
 
@@ -124,6 +127,8 @@ Importante:
 - Identificar roles que necesitan ver datos completos y otorgarles permiso `UNMASK`.
 - Documentar y revisar máscaras en conjunto con clasificación.
 - Registrar accesos y excepciones en auditoría.
+  
+&nbsp;
 
 ## Libro de contabilidad (Ledger) de Azure SQL Database
 
@@ -140,6 +145,8 @@ Uso general:
 - Hacer copias de seguridad y exportar evidencias cuando sea necesario para auditoría externa.
 
 Nota técnica y enlaces: la habilitación y comandos concretos pueden cambiar; consulte la documentación oficial para pasos y ejemplos de habilitación y verificación del ledger.
+
+&nbsp;
 
 ## Microsoft Defender for SQL (antes Advanced Threat Protection)
 
@@ -162,6 +169,8 @@ Buenas prácticas:
 - Tratar las alertas como señales de investigación: correlacionar con logs de auditoría.
 - Programar escaneos regulares de Vulnerability Assessment.
 - Asegurar que la cuenta que gestiona Defender tenga permisos mínimos necesarios.
+- 
+&nbsp;
 
 ## Referencias y enlaces de interés
 
