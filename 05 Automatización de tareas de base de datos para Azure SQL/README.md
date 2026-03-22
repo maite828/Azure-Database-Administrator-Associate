@@ -22,4 +22,4 @@ Notas:
 - No se proporcionan enlaces directos desde el índice principal; consulte este README para una descripción rápida de los runbooks disponibles.
 
 Runbooks incluidos (breve):
-- RebuildIndexes_Runbook.ps1: runbook para reconstrucción/reorganización de índices en bases objetivo; admite lectura de targets desde una tabla de control o parámetros directos.
+- `RebuildIndexes_Runbook.ps1`: runbook para reconstrucción/reorganización de índices en bases objetivo; admite lectura de targets desde una tabla de control o parámetros directos.
