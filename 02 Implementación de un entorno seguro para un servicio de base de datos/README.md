@@ -16,3 +16,4 @@
 - [03 Implementación de controles de cumplimiento para datos confidenciales](03%20Implementaci%C3%B3n%20de%20controles%20de%20cumplimiento%20para%20datos%20confidenciales.md): Conceptos generales de clasificación, flujo de trabajo, RLS, DDM, Ledger y Defender for SQL.
   - [Dynamic Data Masking Examples](03.a%20Dynamic%20Data%20Masking%20Examples.md): Ejemplos comentados de DDM sobre `AdventureWorksLT`, orden de ejecución y pruebas con `EXECUTE AS`.
   - [Ledger examples](03.b%20Ledger%20examples.md): Comandos y consultas para trabajar con Azure SQL Ledger, ejemplos de creación, consulta y deshabilitación.
+  - [Seguridad de Fila (Row-Level Security)](03.c%20Seguridad%20de%20Fila.md): Ejemplo práctico con Northwind sobre cómo implementar RLS en la tabla `Orders`.

@@ -9,3 +9,9 @@
 	- [Eventos Extendidos](01.c%20Eventos%20Extendidos.md): Variante que escribe `.xel` en Azure Blob Storage; incluye creación de `MASTER KEY` y `DATABASE SCOPED CREDENTIAL` y procedimientos para actualización.
 	- [Generar SAS y actualizar credencial](01.d%20Generar%20SAS%20y%20actualizar%20credencial.md): Scripts de ejemplo (PowerShell y az CLI) para generar SAS y actualizar la `DATABASE SCOPED CREDENTIAL` desde la línea de comandos.
 
+## 02 - Configuración de recursos de SQL Server para obtener un rendimiento óptimo
+- [02 Configuración de recursos de SQL Server para obtener un rendimiento óptimo](02%20Configuración%20de%20recursos%20de%20SQL%C2%A0Server%20para%20obtener%20un%20rendimiento%20óptimo.md): Recomendaciones y ejemplos (Azure PowerShell, Azure CLI y T-SQL) para IaaS y PaaS centradas en Azure Storage, diseño de discos, `tempdb`, elección de VM y Resource Governor.
+
+## 03 - Configuración de bases de datos para el rendimiento óptimo
+- [03 Configuración de bases de datos para el rendimiento óptimo](03%20Configuración%20de%20bases%20de%20datos%20para%20el%20rendimiento%20óptimo.md): Ajustes de ámbito de base de datos, Intelligent Query Processing (IQP), Automatic Tuning y tareas de mantenimiento de índices y estadísticas; incluye alternativas para entornos PaaS donde no existe SQL Agent.
+
