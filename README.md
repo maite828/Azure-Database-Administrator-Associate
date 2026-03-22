@@ -20,7 +20,7 @@ cd LabFiles/AllFiles/Labs/Setup
 - [03 Supervisión y optimización de los recursos operativos en Azure SQL](03%20Supervisi%C3%B3n%20y%20optimizaci%C3%B3n%20de%20los%20recursos%20operativos%20en%20Azure%20SQL/)
 - [04 Optimización del rendimiento de las consultas en Azure SQL](04%20Optimizaci%C3%B3n%20del%20rendimiento%20de%20las%20consultas%20en%20Azure%20SQL/)
 - [05 Automatización de tareas de base de datos para Azure SQL](05%20Automatizaci%C3%B3n%20de%20tareas%20de%20base%20de%20datos%20para%20Azure%20SQL/)
-- [06 Planeación e implementación de un entorno de alta disponibilidad y recuperación ante desastres](06%20Planeaci%C3%B3n%20e%20implementaci%C3%B3n%20de%20un%20entorno%20de%20alta%20disponibilidad%20y%20recuperaci%C3%B3n%20ante%20desastres/)
+- [06 Planeación e implementación de un entorno de alta disponibilidad y recuperación ante desastres](06%20Planeaci%C3%B3n%20e%20implementaci%C3%B3n%20de%20un%20entorno%20de%20HA%20y%20DR/)
 
 &nbsp;
 &nbsp;
